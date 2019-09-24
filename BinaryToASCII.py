@@ -1,8 +1,9 @@
 # -*- encoding: utf-8 -*-
 import struct
+import sys
 
-infile = open('binary.stl') #import file
-out = open('ASCII.stl', 'w') #export file
+infile = open(sys.argv[1]) #import file
+out = open(sys.argv[2], 'w') #export file
 
 data = infile.read()
 
